@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- The Basics -->
+	<groupId>gecko</groupId>
+	<artifactId>mft-x-protocols</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>com</module>
+	</modules>
+	<dependencies/>
+	<!--parent></parent-->
+	<!--dependencyManagement></dependencyManagement-->
+	<!--modules></modules-->
+	<properties>
+		<mft-x-protocols.version>3.0.0</mft-x-protocols.version>
+	</properties>
+	<!-- Build Settings -->
+	<!--build></build-->
+	<!--reporting></reporting-->
+	<!-- More Project Information -->
+	<name>MFT X-Protocols</name>
+	<description>MFT X-Protocols Otonet v1</description>
+	<licenses>
+		<license>
+			<comments>Powered by GECKO SOFTWARE</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>GECKO SOFTWARE</name>
+		<url>http://publishing.bygecko.com</url>
+	</organization>
+	
+		<!-- Environment Settings -->
+	<issueManagement>
+		<system>Redmine</system>
+		<url>http://support.bygecko.com/projects/mft-x-protocols</url>
+	</issueManagement>
+	<scm>
+		<connection>
+			scm:svn:http://pic02.virtuel.gecko.fr/svn/mft-x-protocols
+		</connection>
+	</scm>
+	<repositories>
+		<repository>
+			<id>Nexus-byGecko-ThirdParty</id>
+			<url>http://pic02.virtuel.gecko.fr:8081/nexus/content/repositories/thirdparty/</url>
+		</repository>
+	</repositories>
+</project>

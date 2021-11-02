@@ -1,0 +1,1 @@
+mft partenaire_appelé_fictif fichier01_lecture objectif_session_sortante_fictif i_chemin_fic=C:/toto.txt

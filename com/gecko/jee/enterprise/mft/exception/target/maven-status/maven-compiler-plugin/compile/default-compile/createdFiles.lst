@@ -1,0 +1,3 @@
+com\gecko\jee\enterprise\mft\exception\TypeNiveauAnomalie.class
+com\gecko\jee\enterprise\mft\exception\BusinessException.class
+com\gecko\jee\enterprise\mft\exception\TechnicalException.class

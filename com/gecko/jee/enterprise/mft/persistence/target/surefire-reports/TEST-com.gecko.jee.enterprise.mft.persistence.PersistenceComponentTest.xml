@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest" time="0.01" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.7+8-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.7\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Workspaces\WKS_GKO_MFT\com\gecko\jee\enterprise\mft\persistence"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Workspaces\WKS_GKO_MFT\com\gecko\jee\enterprise\mft\persistence"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.7+8-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Gecko\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Workbenchs\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Workbenchs\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk-11.0.7\bin;C:\Program Files\Ballerina\\bin;C:\Program Files\Liquid Technologies\Liquid Studio 2020\XmlDataBinder18\Redist18\cpp\win32\bin;C:\Program Files\Liquid Technologies\Liquid Studio 2020\XmlDataBinder18\Redist18\cpp\win64\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files\nodejs\;C:\Workbenchs\gradle-7.1.1\bin;C:\Users\Gecko\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\DataGrip 2020.1.5\bin;;C:\Users\Gecko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Gecko\AppData\Roaming\npm;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Gecko"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Gecko"/>
+    <property name="java.class.path" value="C:\Workbenchs\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.7"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.7"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="C:\Workbenchs\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest" name="insertAndSelectInCommandeMacro" time="0.01">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 33 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 48 more
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:187)
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.&lt;init&gt;(EntityLoadQueryDetails.java:85)
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.&lt;init&gt;(AbstractLoadPlanBasedEntityLoader.java:86)
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:125)
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:38)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:90)
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:83)
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30)
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2488)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2510)
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:4179)
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:4155)
+	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:230)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 52 more
+</error>
+    <system-out>15:02:44.946 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:44.954 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:02:44.963 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:02:44.984 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest] from class [org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper]
+15:02:44.999 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest], using SpringBootContextLoader
+15:02:45.002 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]: class path resource [com/gecko/jee/enterprise/mft/persistence/PersistenceComponentTest-context.xml] does not exist
+15:02:45.003 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]: class path resource [com/gecko/jee/enterprise/mft/persistence/PersistenceComponentTestContext.groovy] does not exist
+15:02:45.003 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:02:45.004 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]: PersistenceComponentTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:02:45.070 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.138 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Workspaces\WKS_GKO_MFT\com\gecko\jee\enterprise\mft\persistence\target\classes\com\gecko\jee\enterprise\mft\persistence\PersistenceApplication.class]
+15:02:45.140 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.gecko.jee.enterprise.mft.persistence.PersistenceApplication for test class com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest
+15:02:45.142 [main] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - @TestExecutionListeners is not present for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]: using defaults.
+15:02:45.142 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:02:45.150 [main] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+15:02:45.159 [main] INFO org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19e4653c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@795509d9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53045c6c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5149d738, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6bbe85a8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a7442c7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4be29ed9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@548d708a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b013c76, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53fb3dab, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@cb0755b]
+15:02:45.161 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.161 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.163 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.163 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.164 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.164 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.165 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.165 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.170 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@31ea9581 testClass = PersistenceComponentTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@231f98ef testClass = PersistenceComponentTest, locations = &apos;{}&apos;, classes = &apos;{class com.gecko.jee.enterprise.mft.persistence.PersistenceApplication}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}&apos;, contextCustomizers = set[[ImportsContextCustomizer@7c137fd5 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3571b748, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4470f8a6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@dd0c991, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@dab841d7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@13b13b5d], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+15:02:45.171 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.171 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest]
+15:02:45.177 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@31ea9581 testClass = PersistenceComponentTest, testInstance = com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest@23e84203, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@231f98ef testClass = PersistenceComponentTest, locations = &apos;{}&apos;, classes = &apos;{class com.gecko.jee.enterprise.mft.persistence.PersistenceApplication}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}&apos;, contextCustomizers = set[[ImportsContextCustomizer@7c137fd5 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3571b748, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4470f8a6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@dd0c991, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@dab841d7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@13b13b5d], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+15:02:45.266 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___&apos;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &apos;_ | &apos;_| | &apos;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &apos;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2021-10-27 15:02:45.533  INFO 11132 --- [           main] c.g.j.e.m.p.PersistenceComponentTest     : Starting PersistenceComponentTest on DESKTOP-2AOL5I0 with PID 11132 (started by Gecko in C:\Workspaces\WKS_GKO_MFT\com\gecko\jee\enterprise\mft\persistence)
+2021-10-27 15:02:45.537  INFO 11132 --- [           main] c.g.j.e.m.p.PersistenceComponentTest     : No active profile set, falling back to default profiles: default
+2021-10-27 15:02:45.991  INFO 11132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-27 15:02:46.244  INFO 11132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 243ms. Found 32 repository interfaces.
+2021-10-27 15:02:46.292  INFO 11132 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing &apos;dataSource&apos; DataSource bean with embedded version
+2021-10-27 15:02:46.765  INFO 11132 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url=&apos;jdbc:h2:mem:9786e68c-7494-4452-b5b7-efc499ff3429;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false&apos;, username=&apos;sa&apos;
+2021-10-27 15:02:48.985  WARN 11132 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+2021-10-27 15:02:48.990  INFO 11132 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with &apos;debug&apos; enabled.
+2021-10-27 15:02:48.998 ERROR 11132 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) ~[surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) ~[surefire-booter-2.12.4.jar:2.12.4]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 48 common frames omitted
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:187) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.&lt;init&gt;(EntityLoadQueryDetails.java:85) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.&lt;init&gt;(AbstractLoadPlanBasedEntityLoader.java:86) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:125) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:38) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:90) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:83) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2488) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2510) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:4179) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:4155) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:230) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:295) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 52 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___&apos;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &apos;_ | &apos;_| | &apos;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &apos;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2021-10-27 15:02:49.029  INFO 11132 --- [           main] c.g.j.e.m.p.PersistenceComponentTest     : Starting PersistenceComponentTest on DESKTOP-2AOL5I0 with PID 11132 (started by Gecko in C:\Workspaces\WKS_GKO_MFT\com\gecko\jee\enterprise\mft\persistence)
+2021-10-27 15:02:49.030  INFO 11132 --- [           main] c.g.j.e.m.p.PersistenceComponentTest     : No active profile set, falling back to default profiles: default
+2021-10-27 15:02:49.176  INFO 11132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-27 15:02:49.284  INFO 11132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 32 repository interfaces.
+2021-10-27 15:02:49.299  INFO 11132 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing &apos;dataSource&apos; DataSource bean with embedded version
+2021-10-27 15:02:49.326  INFO 11132 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url=&apos;jdbc:h2:mem:75db58b6-acb0-48b0-b98f-178ca1b5dcdd;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false&apos;, username=&apos;sa&apos;
+2021-10-27 15:02:49.619  WARN 11132 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+2021-10-27 15:02:49.621  INFO 11132 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with &apos;debug&apos; enabled.
+2021-10-27 15:02:49.624 ERROR 11132 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) ~[spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) ~[surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) ~[surefire-booter-2.12.4.jar:2.12.4]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 47 common frames omitted
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:187) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.&lt;init&gt;(EntityLoadQueryDetails.java:85) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.&lt;init&gt;(AbstractLoadPlanBasedEntityLoader.java:86) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:125) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:38) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:90) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:83) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2488) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2510) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:4179) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:4155) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:230) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:295) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 51 common frames omitted
+
+2021-10-27 15:02:49.627 ERROR 11132 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53045c6c] to prepare test instance [com.gecko.jee.enterprise.mft.persistence.PersistenceComponentTest@23e84203]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) ~[na:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) ~[surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) ~[surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) ~[surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;entityManagerFactory&apos; defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 33 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 48 common frames omitted
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.gecko.jee.enterprise.mft.persistence.entity.contexte.ContexteDExécutionAppliqué.fonctionnalités, com.gecko.jee.enterprise.mft.persistence.entity.automate.ÉtatÉlémentaire.transitions]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:187) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.&lt;init&gt;(EntityLoadQueryDetails.java:85) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.&lt;init&gt;(AbstractLoadPlanBasedEntityLoader.java:86) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:125) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.&lt;init&gt;(EntityLoader.java:38) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:90) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:83) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2488) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2510) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:4179) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:4155) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:230) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:295) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 52 common frames omitted
+
+</system-out>
+    <system-err>SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Workbenchs/m3/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Workbenchs/m3/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.7/log4j-slf4j-impl-2.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+</system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+com\gecko\jee\enterprise\mft\web\view\TransfertFichierView.class
+com\gecko\jee\enterprise\mft\web\view\MainLayout.class
+com\gecko\jee\enterprise\mft\web\security\CustomRequestCache.class
+com\gecko\jee\enterprise\mft\web\view\DashboardView.class
+com\gecko\jee\enterprise\mft\web\view\component\HeaderComponent.class
+com\gecko\jee\enterprise\mft\web\view\LoginView.class
+com\gecko\jee\enterprise\mft\web\view\component\FooterComponent.class
+com\gecko\jee\enterprise\mft\web\security\ConfigureUIServiceInitListener.class
+com\gecko\jee\enterprise\mft\web\security\SecurityConfig.class
+com\gecko\jee\enterprise\mft\web\view\ParametrageView.class
+com\gecko\jee\enterprise\mft\web\security\SecurityService.class
+com\gecko\jee\enterprise\mft\web\security\SecurityUtils.class
+com\gecko\jee\enterprise\mft\web\view\VaadinNotifier.class
+com\gecko\jee\enterprise\mft\web\view\template\AbstractViewTemplate.class
+com\gecko\jee\enterprise\mft\web\view\component\DrawerMenuComponent.class
+com\gecko\jee\enterprise\mft\web\WebApplication.class

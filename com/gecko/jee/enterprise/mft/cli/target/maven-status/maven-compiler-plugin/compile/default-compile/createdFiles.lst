@@ -1,0 +1,8 @@
+com\gecko\jee\enterprise\mft\cli\shell\CliInputReader.class
+com\gecko\jee\enterprise\mft\cli\shell\CliShellHelper.class
+com\gecko\jee\enterprise\mft\cli\shell\CliPromptColor.class
+com\gecko\jee\enterprise\mft\cli\shell\CliShellComponent.class
+com\gecko\jee\enterprise\mft\cli\initialize\CliShellInitializer.class
+com\gecko\jee\enterprise\mft\cli\shell\CliPromptProvider.class
+com\gecko\jee\enterprise\mft\cli\CliApplication.class
+com\gecko\jee\enterprise\mft\cli\shell\CliShellNotifier.class

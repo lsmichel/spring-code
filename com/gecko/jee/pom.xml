@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>mft-x-protocols.com</groupId>
+		<artifactId>gecko</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<groupId>mft-x-protocols.com.gecko</groupId>
+	<artifactId>jee</artifactId>
+	<packaging>pom</packaging>
+
+	<name>${project.groupId}.${project.artifactId}-${project.version}</name>
+
+	<modules>
+		<module>enterprise</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- MFT -->
+			<dependency>
+				<groupId>mft-x-protocols.com.gecko.jee.enterprise.mft</groupId>
+				<artifactId>business</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>mft-x-protocols.com.gecko.jee.enterprise.mft</groupId>
+				<artifactId>exception</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>mft-x-protocols.com.gecko.jee.enterprise.mft</groupId>
+				<artifactId>persistence</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>mft-x-protocols.com.gecko.jee.enterprise.mft</groupId>
+				<artifactId>utils</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+
+			<!-- Noyau Olivier HAAS -->
+			<dependency>
+				<groupId>fr.s3ca.sds01</groupId>
+				<artifactId>noyau</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+
+			<!-- Spring -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.shell</groupId>
+				<artifactId>spring-shell-starter</artifactId>
+				<version>2.0.0.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-spring-boot-starter</artifactId>
+				<version>20.0.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring.boot.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- Presentation -->
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-bom</artifactId>
+				<version>${vaadin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- Databases -->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>42.2.18</version>
+			</dependency>
+
+			<!-- Logger -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j-impl</artifactId>
+				<version>2.7</version>
+			</dependency>
+			<!-- Google GSON-->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.6.2</version>
+			</dependency>
+            <!--OKHTTP3-->
+			<dependency>
+				<groupId>com.squareup.okhttp3</groupId>
+				<artifactId>okhttp</artifactId>
+				<version>3.14.9</version>
+			</dependency>
+             
+			<!-- Tests -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.13</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<properties>
+		<!-- encoding -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- minimal requirements -->
+		<java.version>1.8</java.version>
+		<maven.version>3.6</maven.version>
+
+		<!-- maven plugins -->
+		<maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+
+		<!-- Spring -->
+		<spring.boot.version>2.1.5.RELEASE</spring.boot.version>
+
+		<!-- Vaadin -->
+		<vaadin.version>14.6.8</vaadin.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<executable>C:/Workbenchs/jdk1.8.0_101/bin/javac</executable>
+					<jdkHome>C:/Workbenchs/jdk1.8.0_101/</jdkHome>
+				</configuration>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>${maven-enforcer-plugin.version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>enforce</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<rule>
+										<requireJavaVersion>
+											<version>${java.version}</version>
+										</requireJavaVersion>
+										<requireMavenVersion>
+											<version>${maven.version}</version>
+										</requireMavenVersion>
+									</rule>
+								</rules>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven-jar-plugin.version}</version>
+					<configuration>
+						<archive>
+							<manifestEntries>
+								<Multi-Release>true</Multi-Release>
+							</manifestEntries>
+						</archive>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>${maven-assembly-plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

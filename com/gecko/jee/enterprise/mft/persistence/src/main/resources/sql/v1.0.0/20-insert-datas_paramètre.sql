@@ -1,0 +1,44 @@
+-- Paramètres
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'i_chemin_fic', 'String', true);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'e_id_fic', 'String', true);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'i_fin_de_fic', 'Boolean', true);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'i_ligne', 'String', true);
+
+-- Pesit
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/écoute_s', 'JSON', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Connection_ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Hostname', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Port_nr', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/SSL_used', 'Boolean', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Preconnect_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Preconnect_password', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Security_profile', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Transfer_ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Transfer_type', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Transfer_priority', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Compression', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Compression_Mode', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Synchro', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Server_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Caller_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Bank_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Customer_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Caller_Hex_Ident', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Multi_PDU', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/TransferEncoding', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Article_Format', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Storage_Unit', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Article_Size', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/DataBlock_Size', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Synchro_Module_Size', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Synchro_Window', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/File_Type', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Application_name', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Transfered_file_path', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Transfered_file_name', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/File_Size', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Local_Access', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Local_Encoding', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Sampling_Buffer_Length', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/Max_Record_Length', 'String', false);
+INSERT INTO public.parametre (est_obligatoire, expr_implicite_si_facult, ident, type_, est_implicitement_objet_de_flux) VALUES (true, null, 'PeSIT/User_Encoding_Method', 'String', false);

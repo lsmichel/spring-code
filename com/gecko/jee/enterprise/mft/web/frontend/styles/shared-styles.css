@@ -1,0 +1,48 @@
+/*
+   CSS styling  for MFT web app.
+*/
+
+/* CSS class name to center align the content . */
+.centered-content {
+  margin: 0 auto;
+  max-width: 250px;
+}
+.header {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.footer {
+  height: 25px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.connexion {
+  position: absolute;
+  right: 0px;
+}
+.workspace {
+	overflow: auto;
+	background-color: lightgrey;
+} 
+.sideMenu {
+	background-color: white;
+	z-index: 1000;
+	position: absolute;
+	transition: 0.2s;
+	left: -1000px;
+	box-shadow: 2px 1px 5px 0px grey;
+}
+.card {
+	background-color: white;
+	flex-shrink: 0;
+	box-shadow: 2px 1px 5px 0px grey;
+}
+.tab {
+	flex-direction: column;
+}
+
